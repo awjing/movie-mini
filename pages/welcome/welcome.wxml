@@ -3,7 +3,7 @@
 <view class="container">
   <image class="user-avatar" src="/images/avatar/avatar.png"></image>
   <text class="user-name">hello,小静静～</text>
-  <view class="moto-container">
+  <view class="moto-container" bind:tap="onTap">
     <text class="moto">开启小程序之旅</text>
   </view>
 </view>
