@@ -15,4 +15,20 @@
       <image src="/images/iqiyi.png"></image>
     </swiper-item>
   </swiper>
+
+  <view class="post-container">
+    <view class="post-author-date">
+      <image class="post-author" src="/images/avatar/2.png"></image>
+      <text class="post-date">Sep 18 2016</text>
+    </view>
+    <text class="post-title">我是小静静～</text>
+    <image class="post-image" src="/images/post/crab.png"></image>
+    <text class="post-content">最近正在减肥，然后饿了，想吃火鸡面、螺狮粉、烤肉、麻辣烫、麻婆豆腐、油泼面、蘸水面、凉皮、肉夹馍、蒸饺、炸鸡等等，哈哈哈哈哈哈哈哈哈哈</text>
+    <view class="post-like">
+      <image class="post-like-image" src="/images/icon/chat.png"></image>
+      <text class="post-like-font">96</text>
+      <image class="post-like-image" src="/images/icon/view.png"></image>
+      <text class="post-like-font">112</text>
+    </view>
+  </view>
 </view>
