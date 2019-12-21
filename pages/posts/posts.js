@@ -13,16 +13,27 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var post_content = {
-      data: 'Dec 21 2019',
+    var post_content = [{
+      date: 'Dec 21 2019',
       title: '我是小静静～',
       post_img: '/images/post/crab.png',
       content: '最近正在减肥，然后饿了，想吃火鸡面、螺狮粉、烤肉、麻辣烫、麻婆豆腐、油泼面、蘸水面、凉皮、肉夹馍、蒸饺、炸鸡等等，哈哈哈哈哈哈哈哈哈哈',
       view_num: '112',
       collect_num: '96',
-      author_img: '/images/avatar/2.png'
-    }
-    this.setData(post_content)
+      author_img: '/images/avatar/2.png',
+      text_condition: true
+    },
+    {
+      date: 'Dec 21 2019',
+      title: '我是小静静～',
+      post_img: '/images/post/crab.png',
+      content: '最近正在减肥，然后饿了，想吃火鸡面、螺狮粉、烤肉、麻辣烫、麻婆豆腐、油泼面、蘸水面、凉皮、肉夹馍、蒸饺、炸鸡等等，哈哈哈哈哈哈哈哈哈哈',
+      view_num: '112',
+      collect_num: '96',
+      author_img: '/images/avatar/2.png',
+      text_condition: true
+    }]
+    this.setData({post_content})
   },
 
   /**
