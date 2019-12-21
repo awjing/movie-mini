@@ -1,7 +1,7 @@
 <!-- wxml 用来编写页面骨架文件 -->
 <!-- <div> 容器 分离文档 -->
 <view class="container">
-  <image class="user-avatar" src="/images/avatar.png"></image>
+  <image class="user-avatar" src="/images/avatar/avatar.png"></image>
   <text class="user-name">hello,小静静～</text>
   <view class="moto-container">
     <text class="moto">开启小程序之旅</text>
