@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/welcome/welcome",
-    "pages/posts/posts"
+    "pages/posts/posts",
+    "pages/posts/post-item/post-item-template"
   ],
   "window": {
     "navigationBarBackgroundColor": "#405f80"
