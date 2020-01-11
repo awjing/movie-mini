@@ -1,7 +1,9 @@
 var postsData = require('../../../data/posts-data.js')
 
 Page({
-  data: {},
+  data: {
+    isPlayingMusic: false
+  },
   onLoad: function (options) {
     var postId = options.id
     this.data.currentPostId = postId
@@ -94,6 +96,27 @@ Page({
         console.log(res.errMsg)
       }
     })
+  },
+  onMusicTap: function (event) {
+    var isPlayingMusic = this.data.isPlayingMusic
+    var currentPostId = this.data.currentPostId
+    var postData = postsData.postList[currentPostId]
+    if (isPlayingMusic) {
+      wx.pauseBackgroundAudio()
+      this.setData({
+        isPlayingMusic: false
+      })
+    } else {
+      wx.playBackgroundAudio({
+        dataUrl: postData.music.url,
+        title: postData.music.title,
+        coverImgUrl: postData.music.coverImg
+      })
+      this.setData({
+        isPlayingMusic: true
+      })
+    }
+
   }
   // 缓存上线最大不能超过10M
 })
